@@ -1,4 +1,3 @@
-# создать образ на основе базового слоя python (там будет ОС и интерпретатор Python)
 FROM python:3.8.5
 WORKDIR /code
 COPY . .
