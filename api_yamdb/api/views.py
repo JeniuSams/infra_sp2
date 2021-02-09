@@ -1,9 +1,11 @@
 from uuid import uuid1
 
 from api_yamdb import settings
-from django_filters.rest_framework import DjangoFilterBackend
 
 from django.core.mail import send_mail
+
+from django_filters.rest_framework import DjangoFilterBackend
+
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 
@@ -20,6 +22,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from reviews.models import Review
 
 from titles.models import Category, Genre, Title
+
 from users.models import User
 
 from .filters import TitleFilter
